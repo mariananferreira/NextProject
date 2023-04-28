@@ -5,3 +5,97 @@
 #__next {
   min-height: 100%;
 }
+
+.name{
+  color:#fff;
+  font-size: 30px;
+  font-family: "Great Vibes", cursive;
+
+}
+
+.textAboutMe{
+  color:#fff;
+  font-size: 16px;
+  font-family: 'Carme', sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+.test {
+  font-family: 'Courier New', monospace;
+  color:#1e1e26;
+  letter-spacing: 2px;
+  font-weight: 200;
+  line-height: 110%;
+}
+
+.background{
+  background-color: #fff;
+}
+
+.summmaryText{
+  color:#1e1e26;
+  font-family: 'Carme', sans-serif;
+  text-align: center;
+
+}
+.summmaryTextWhite{
+  color:#fff;
+  font-family: 'Carme', sans-serif;
+  text-align: center;
+
+}
+
+.title{
+  color:#74b9b3;
+  font-weight: bold;
+  font-family: 'Carme', sans-serif;
+  text-align: center;
+  font-size: x-large;
+  padding-bottom: 3%;
+}
+
+.titleWhite{
+  color:#fff;
+  font-weight: bold;
+  font-family: 'Carme', sans-serif;
+  text-align: center;
+  font-size: x-large ;
+  padding-bottom:10% ;
+}
+
+
+.mobileNumber{
+  font-family: 'Carme', sans-serif;
+  color: #1e1e26;
+  margin-left: 0%;
+  margin-right: 0%!important;
+
+}
+
+.contactAlign{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.imageZoom:hover{
+  transform: scale(1.25);
+
+}
+
+.secondaryHeader:hover{
+  background-color: #74b9b3;
+}
+
+
+.secondary {
+  background-color: #74b9b3;
+}
+
+.buttonStyle{
+  color: #1e1e26;
+  font-family: 'Carme', sans-serif;
+
+}
