@@ -17,7 +17,7 @@ const posts = [
       "A distância não pode ser um obstáculo para alcançar o sucesso! Marque a sua consulta online, só irá precisar de: Telémovel ou computador com acesso à internet e com câmara, balança e fita métrica.",
     imageUrl: marionline,
   },
-  ];
+];
 
 
 export function SecondaryFeatures() {
@@ -25,11 +25,11 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label=""
-      className="pb-14 pt-10 sm:pb-15 sm:pt-20 lg:pb-32"
+      className="lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
             Emagreça com prazer e simplicidade
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">

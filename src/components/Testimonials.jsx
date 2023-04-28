@@ -1,143 +1,218 @@
 import Image from 'next/image'
 
 import { Container } from '@/components/Container'
-import avatarImage1 from '@/images/avatars/avatar-1.png'
-import avatarImage2 from '@/images/avatars/avatar-2.png'
-import avatarImage3 from '@/images/avatars/avatar-3.png'
-import avatarImage4 from '@/images/avatars/avatar-4.png'
-import avatarImage5 from '@/images/avatars/avatar-5.png'
+import mari3 from '@/images/fotoRS.jpg'
+import insta from '@/images/insta.png'
 
-const testimonials = [
-  [
-    {
-      content:
-        'TaxPal is so easy to use I can’t help but wonder if it’s really doing the things the government expects me to do.',
-      author: {
-        name: 'Sheryl Berge',
-        role: 'CEO at Lynch LLC',
-        image: avatarImage1,
-      },
-    },
-    {
-      content:
-        'I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'The best part about TaxPal is every time I pay my employees, my bank balance doesn’t go down like it used to. Looking forward to spending this extra cash when I figure out why my card is being declined.',
-      author: {
-        name: 'Leland Kiehn',
-        role: 'Founder of Kiehn and Sons',
-        image: avatarImage5,
-      },
-    },
-    {
-      content:
-        'There are so many things I had to do with my old software that I just don’t do at all with TaxPal. Suspicious but I can’t say I don’t love it.',
-      author: {
-        name: 'Erin Powlowski',
-        role: 'COO at Armstrong Inc',
-        image: avatarImage2,
-      },
-    },
-  ],
-  [
-    {
-      content:
-        'I used to have to remit tax to the EU and with TaxPal I somehow don’t have to do that anymore. Nervous to travel there now though.',
-      author: {
-        name: 'Peter Renolds',
-        role: 'Founder of West Inc',
-        image: avatarImage3,
-      },
-    },
-    {
-      content:
-        'This is the fourth email I’ve sent to your support team. I am literally being held in jail for tax fraud. Please answer your damn emails, this is important.',
-      author: {
-        name: 'Amy Hahn',
-        role: 'Director at Velocity Industries',
-        image: avatarImage4,
-      },
-    },
-  ],
-]
-
-function QuoteIcon(props) {
-  return (
-    <svg aria-hidden="true" width={105} height={78} {...props}>
-      <path d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z" />
-    </svg>
-  )
-}
 
 export function Testimonials() {
   return (
     <section
       id="testimonials"
-      aria-label="What our customers are saying"
-      className="bg-slate-50 py-20 sm:py-32"
+      aria-label=""
+      className="bg-slate-200 py-20 sm:py-32"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Loved by businesses worldwide.
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3"
-        >
-          {testimonials.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
-                {column.map((testimonial, testimonialIndex) => (
-                  <li key={testimonialIndex}>
-                    <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10">
-                      <QuoteIcon className="absolute left-6 top-6 fill-slate-100" />
-                      <blockquote className="relative">
-                        <p className="text-lg tracking-tight text-slate-900">
-                          {testimonial.content}
-                        </p>
-                      </blockquote>
-                      <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
-                        <div>
-                          <div className="font-display text-base text-slate-900">
-                            {testimonial.author.name}
-                          </div>
-                          <div className="mt-1 text-sm text-slate-500">
-                            {testimonial.author.role}
-                          </div>
-                        </div>
-                        <div className="overflow-hidden rounded-full bg-slate-50">
-                          <Image
-                            className="h-14 w-14 object-cover"
-                            src={testimonial.author.image}
-                            alt=""
-                            width={56}
-                            height={56}
-                          />
-                        </div>
-                      </figcaption>
-                    </figure>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
+          <div className="mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div className="relative bg-white shadow-xl">
+              <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="relative overflow-hidden secondary py-10 px-6 sm:px-10 xl:p-12">
+                  <div
+                    className="pointer-events-none absolute inset-0 sm:hidden"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      className="absolute inset-0 h-full w-full"
+                      width={343}
+                      height={388}
+                      viewBox="0 0 343 388"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                    >
+                      <path
+                        d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
+                        fill="url(#linear1)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear1"
+                          x1="254.553"
+                          y1="107.554"
+                          x2="961.66"
+                          y2="814.66"
+                          gradientUnits="userSpaceOnUse"
+                          >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </svg>        
+                  </div>
+                  <div
+                    className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 sm:block lg:hidden"
+                    aria-hidden="true"
+                  >        
+                    <svg
+                      className="absolute inset-0 h-full w-full"
+                      width={359}
+                      height={339}
+                      viewBox="0 0 359 339"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                    >
+                      <path
+                        d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
+                        fill="url(#linear2)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear2"
+                          x1="192.553"
+                          y1="28.553"
+                          x2="899.66"
+                          y2="735.66"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div
+                    className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 lg:block"
+                    aria-hidden="true"
+                  >
+                    <svg
+                      className="absolute inset-0 h-full w-full"
+                      width={160}
+                      height={678}
+                      viewBox="0 0 160 678"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid slice"
+                    >
+                      <path
+                        d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
+                        fill="url(#linear3)"
+                        fillOpacity=".1"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="linear3"
+                          x1="192.553"
+                          y1="325.553"
+                          x2="899.66"
+                          y2="1032.66"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#fff" />
+                          <stop offset={1} stopColor="#fff" stopOpacity={0} />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h3 className="text-lg titleWhite text-white">Comece já hoje a mudar a sua vida!</h3>
+                  <Image
+                    className="rounded-3xl object-cover object-center shadow-2xl"
+                    src={mari3}
+                    alt=""
+                    priority
+                  />
+                </div>
+                <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                  <h3 className="text-lg title">
+                    Marque já a sua consulta!
+                  </h3>
+                  <p className="summmaryText">Tem dúvidas ou quer efetuar uma marcação de consulta?<br/> Contacte-me através das seguintes redes sociais:
+                  </p>
+                  <Image
+                    className="rounded-3xl object-cover object-center shadow-2xl"
+                    src={insta}
+                    alt=""
+                    priority
+                  />
+                  <div className="sm:col-span-2 sm:flex sm:center-end contactAlign">
+                    <ul role="list" className="mt-10 flex space-x-6">
+                      <p className="mobileNumber">+351 938396971
+                      </p>
+                      <li>
+                        <a
+                          className="text-indigo-200 hover:text-indigo-100"
+                          href="https://www.facebook.com/nutrimarianaguerreiro"
+                          target="blank"
+                          rel="noreferrer"
+                        >
+                          <span className="sr-only">Facebook
+                          </span>
+                          <svg
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M22.258 1H2.242C1.556 1 1 1.556 1 2.242v20.016c0 .686.556 1.242 1.242 1.242h10.776v-8.713h-2.932V11.39h2.932V8.887c0-2.906 1.775-4.489 4.367-4.489 1.242 0 2.31.093 2.62.134v3.037l-1.797.001c-1.41 0-1.683.67-1.683 1.653v2.168h3.362l-.438 3.396h-2.924V23.5h5.733c.686 0 1.242-.556 1.242-1.242V2.242C23.5 1.556 22.944 1 22.258 1"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="text-indigo-200 hover:text-indigo-100"
+                          href="https://www.instagram.com/nutri_marianaguerreiro/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <span className="sr-only">Instagram</span>
+                          <svg
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="h-9 w-9"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"                        
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="text-indigo-200 hover:text-indigo-100"
+                          href="https://api.whatsapp.com/send?phone=938396971&text=Olá, gostaria de marcar uma consulta!"
+                          target="blank"
+                          rel="noreferrer"
+                        >
+                          <span className="sr-only">Whatsapp</span>
+                          <svg
+                            width={24}
+                            height={24}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            className="h-9 w-9"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       </Container>
     </section>
   )
