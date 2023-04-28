@@ -13,7 +13,7 @@ import { Testimonials } from '@/components/Testimonials'
 export default function Home() {
   return (
     <>
-      <Head>
+      <Head className='bg-slate-200'>
         <title>Acompanhamento Nutricional</title>
         <meta
           name="description"
@@ -21,7 +21,7 @@ export default function Home() {
         />
       </Head>
       <Header />
-      <main>
+      <main className='bg-slate-200'>
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
