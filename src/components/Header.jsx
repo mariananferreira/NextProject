@@ -93,7 +93,6 @@ export function Header() {
     ">
       <div className="mr-6 flex lg:hidden">
       <MobileNavigation/>
-
       </div>
       <Container>
         <nav className="relative z-50 flex justify-between">
