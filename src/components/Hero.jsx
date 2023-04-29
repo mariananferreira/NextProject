@@ -25,7 +25,7 @@ export function Hero() {
                  <span className="block text-indigo-100">Comece hoje a mudar a sua alimentação</span>
                 </h1>
                 <p className="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-300 sm:max-w-3xl">
-                 Individualizado e ajustado às suas necessidades                    
+                  Individualizado e ajustado às suas necessidades                    
                 </p>
               </div>
             </div>

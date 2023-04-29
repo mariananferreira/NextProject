@@ -4,7 +4,7 @@ import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
 import Image from 'next/image'
 
-import { logo } from '@/images/logo.png'
+import logo from '@/images/logo.png'
 import { Container } from '@/components/Container'
 import { NavLink } from '@/components/NavLink'
 
@@ -100,7 +100,7 @@ export function Header() {
           <div className="relative flex flex-grow basis-0 items-center">
             <Link href="#" aria-label="Home">
             <Image
-                className="h-8 w-30"
+                className="h-9 w-8"
                 src={logo}
                 alt="nut"
                 priority              

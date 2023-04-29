@@ -51,14 +51,12 @@ export function SecondaryFeatures() {
                 />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
-                <div className="flex-1">
                   <a className="mt-2 block">
                     <p className="text-xl font-semibold title">{post.title}</p>
                     <p className="mt-3 summmaryText text-gray-500">
                       {post.description}
                     </p>
                   </a>
-                </div>
               </div>
             </div>
           ))}
