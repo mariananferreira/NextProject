@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
 import target from '@/images/targt.png'
 import body from '@/images/bod.png'
 import apple from '@/images/appl.png'
@@ -32,15 +31,15 @@ export function CallToAction() {
       className=""
     >
     <Container>
-      <div className="mx-auto max-w-2xl md:text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+      <div className="mx-auto max-w-2xl md:text-center margin">
+        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl ">
           Como funciona?
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+        <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4 ">
           A alimentação saudável é a base da saúde. Preconizo tanto nas consultas de nutrição, como no acompanhamento nutricional, uma alimentação saudável e variada.
         </p>
       </div>
-      <div className="mx-auto max-w-7xl py-12 px-3 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl py-12 px-3 sm:px-6 lg:px-8 lg:py-24 ">
         <div className="space-y-10">
           <ul
             role="list"
@@ -59,8 +58,8 @@ export function CallToAction() {
                   priority
                 />
               </div>
-                <div className="space-y-2 xl:space-y-2 ">
-                  <div className="h-2 w-5"></div>
+                <div className="space-y-2 xl:space-y-3">
+                  <div className="h-4 w-6"></div>
                   <div className="space-y-2 xl:flex xl:items-center xl:justify-between secondary] p-2">
                     <div className="space-y-1 text-lg font-medium leading-6 ">
                       <h3 className="title">{person.name}</h3>

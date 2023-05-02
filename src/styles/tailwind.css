@@ -68,8 +68,11 @@
 .mobileNumber{
   font-family: 'Carme', sans-serif;
   color: #1e1e26;
-  margin-left: 0%;
-  margin-right: 0%!important;
+
+}
+.mobileIcon{
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -107,3 +110,14 @@
   margin-left: 5px;
 }
 
+.socialMedia{
+  justify-content: center;
+}
+
+.margin{
+  padding-top: 10rem;
+}
+
+.marginAdjust{
+  margin-top: 6rem;
+}

@@ -8,7 +8,7 @@ import insta from '@/images/insta.png'
 export function Testimonials() {
   return (
     <section
-      id="testimonials"
+      id="contatos"
       aria-label=""
       className="bg-slate-200 py-20 sm:py-32"
     >
@@ -133,10 +133,33 @@ export function Testimonials() {
                     alt=""
                     priority
                   />
-                  <div className="sm:col-span-2 sm:flex sm:center-end contactAlign">
-                    <ul role="list" className="mt-10 flex space-x-6">
+                  <ul  className="mt-10 text-indigo-200 mobileIcon">
+
+                      <li>
+                          <span className="sr-only">Facebook
+                          </span>
+                          <svg
+                            width={70}
+                            height={50}
+                            viewBox="0 0 7 22"
+                            fill="none"
+                            className="h-35 w-50"
+                            aria-hidden="true"
+                          >
+                            <path
+                              d="M10,2h0V1.5a.5.5,0,0,0-1,0V2H5A1,1,0,0,0,4,3V13a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V3A1,1,0,0,0,10,2ZM6,13H5V12H6Zm0-2H5V10H6ZM6,9H5V8H6Zm2,4H7V12H8Zm0-2H7V10H8ZM8,9H7V8H8Zm2,4H9V12h1Zm0-2H9V10h1Zm0-2H9V8h1Zm0-2.5a.5.5,0,0,1-.5.5h-4A.5.5,0,0,1,5,6.5v-3A.5.5,0,0,1,5.5,3h4a.5.5,0,0,1,.5.5Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                      </li>
                       <p className="mobileNumber">+351 938396971
                       </p>
+
+                      </ul>
+                      <div className="sm:col-span-2 sm:flex sm:center-end contactAlign">
+
+                    <ul role="list" className="mt-10 flex space-x-6">
+
                       <li>
                         <a
                           className="text-indigo-200 hover:text-indigo-100"
@@ -149,7 +172,7 @@ export function Testimonials() {
                           <svg
                             width={24}
                             height={24}
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 24 21"
                             fill="none"
                             className="h-6 w-6"
                             aria-hidden="true"
@@ -195,7 +218,7 @@ export function Testimonials() {
                           <svg
                             width={24}
                             height={24}
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 24 23"
                             fill="none"
                             className="h-9 w-9"
                             aria-hidden="true"

@@ -13,10 +13,6 @@ export default function Home() {
     <>
       <Head className='bg-slate-200'>
         <title>Acompanhamento Nutricional</title>
-        <meta
-          name="description"
-          content="mm"
-        />
       </Head>
       <main className='bg-slate-200'>
       <Header />

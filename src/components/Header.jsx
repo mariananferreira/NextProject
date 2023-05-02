@@ -77,9 +77,9 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-[rgba(0,0,0,0.3)] p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5"
           >
-            <MobileNavLink href="#features">Sobre mim</MobileNavLink>
-            <MobileNavLink href="#secondary-features">Agendamentos</MobileNavLink>
-            <MobileNavLink href="#testimonials">Contatos</MobileNavLink>
+            <MobileNavLink href="#sobremim">Sobre mim</MobileNavLink>
+            <MobileNavLink href="#agendamentos">Agendamentos</MobileNavLink>
+            <MobileNavLink href="#contatos">Contatos</MobileNavLink>
           </Popover.Panel>
         </Transition.Child>
       </Transition.Root>
@@ -107,9 +107,9 @@ export function Header() {
             </Link>
             <p className= "primary">Mariana Guerreiro</p>
             <div className="hidden sm:ml-6 lg:block space-x-4">
-              <NavLink href="#features">Sobre mim</NavLink>
-              <NavLink href="#secondary-features">Agendamentos</NavLink>
-              <NavLink href="#testimonials">Contatos</NavLink>
+              <NavLink href="#sobremim">Sobre mim</NavLink>
+              <NavLink href="#agendamentos">Agendamentos</NavLink>
+              <NavLink href="#contatos">Contatos</NavLink>
             </div>
           </div>
         </nav>

@@ -23,7 +23,7 @@ const posts = [
 export function SecondaryFeatures() {
   return (
     <section
-      id="secondary-features"
+      id="agendamentos"
       aria-label=""
       className="lg:pb-32"
     >
@@ -36,7 +36,7 @@ export function SecondaryFeatures() {
             Quer emagrecer sem dietas desiquilibradas e sem passar fome? Conheça os meus diferentes serviços e programas que podem ajudar a mudar a sua alimentação e a transformar a sua vida!
           </p>
         </div>
-        <div className="mx-auto mt-6 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2">
+        <div className="mx-auto mt-6 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-2 marginAdjust">
           {posts.map(post => (
             <div
               key={post.title}
