@@ -78,9 +78,9 @@
 
 .contactAlign{
   display: flex;
-  align-content: center;
-  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .imageZoom:hover{
@@ -119,5 +119,6 @@
 }
 
 .marginAdjust{
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
+

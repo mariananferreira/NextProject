@@ -126,40 +126,9 @@ export function Testimonials() {
                     Marque já a sua consulta!
                   </h3>
                   <p className="summmaryText">Tem dúvidas ou quer efetuar uma marcação de consulta?<br/> Contacte-me através das seguintes redes sociais:
-                  </p>
-                  <Image
-                    className="rounded-3xl object-cover object-center shadow-2xl"
-                    src={insta}
-                    alt=""
-                    priority
-                  />
-                  <ul  className="mt-10 text-indigo-200 mobileIcon">
-
-                      <li>
-                          <span className="sr-only">Facebook
-                          </span>
-                          <svg
-                            width={70}
-                            height={50}
-                            viewBox="0 0 7 22"
-                            fill="none"
-                            className="h-35 w-50"
-                            aria-hidden="true"
-                          >
-                            <path
-                              d="M10,2h0V1.5a.5.5,0,0,0-1,0V2H5A1,1,0,0,0,4,3V13a1,1,0,0,0,1,1h5a1,1,0,0,0,1-1V3A1,1,0,0,0,10,2ZM6,13H5V12H6Zm0-2H5V10H6ZM6,9H5V8H6Zm2,4H7V12H8Zm0-2H7V10H8ZM8,9H7V8H8Zm2,4H9V12h1Zm0-2H9V10h1Zm0-2H9V8h1Zm0-2.5a.5.5,0,0,1-.5.5h-4A.5.5,0,0,1,5,6.5v-3A.5.5,0,0,1,5.5,3h4a.5.5,0,0,1,.5.5Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                      </li>
-                      <p className="mobileNumber">+351 938396971
-                      </p>
-
-                      </ul>
-                      <div className="sm:col-span-2 sm:flex sm:center-end contactAlign">
-
+                  </p>                  
+                  <div className="sm:col-span-2 sm:flex sm:center-end contactAlign">
                     <ul role="list" className="mt-10 flex space-x-6">
-
                       <li>
                         <a
                           className="text-indigo-200 hover:text-indigo-100"
@@ -230,6 +199,27 @@ export function Testimonials() {
                           </svg>
                         </a>
                       </li>
+                    </ul>
+                    <Image
+                      className="rounded-3xl object-cover object-center shadow-2xl marginAdjust"
+                      src={insta}
+                      alt=""
+                      priority
+                    />
+                    <p className="summmaryText marginAdjust">Ou ligue-me através do número:
+                    </p>              
+
+                    <ul  className="mt-10 text-indigo-200 mobileIcon marginAdjust">
+                      <li>
+                          <span className="sr-only">Facebook
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                          </svg>                        
+                      </li>
+                      <p className="mobileNumber">+351 938396971
+                      </p>
                     </ul>
                   </div>
                 </div>
