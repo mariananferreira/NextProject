@@ -25,14 +25,14 @@ export function SecondaryFeatures() {
     <section
       id="agendamentos"
       aria-label=""
-      className="lg:pb-32"
+      className=""
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl sectionTitle">
             Emagreça com prazer e simplicidade
           </h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4 sectionTitle">
             Quer emagrecer sem dietas desiquilibradas e sem passar fome? Conheça os meus diferentes serviços e programas que podem ajudar a mudar a sua alimentação e a transformar a sua vida!
           </p>
         </div>
