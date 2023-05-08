@@ -218,7 +218,7 @@ export function Testimonials() {
                             </path>
                           </svg>
                       </li>
-                      <a href="tel:5551234567">
+                      <a href="tel:938396971">
                         <p className="mobileNumber">+351 938396971
                         </p>
                       </a>
