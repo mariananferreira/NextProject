@@ -13,6 +13,11 @@
 
 }
 
+.websiteColor{
+  color: #74b9b3;
+
+}
+
 .textAboutMe{
   color:#fff;
   font-size: 16px;
@@ -38,8 +43,14 @@
   font-family: 'Carme', sans-serif;
   text-align: center;
   padding-bottom: 25px;
-
 }
+.summmaryTextNoSpace{
+  color:#1e1e26;
+  font-family: 'Carme', sans-serif;
+  text-align: center;
+}
+
+
 .summmaryTextWhite{
   color:#fff;
   font-family: 'Carme', sans-serif;
@@ -69,12 +80,13 @@
 .mobileNumber{
   font-family: 'Carme', sans-serif;
   color: #1e1e26;
-
+  padding-left: 15px;
 }
+
 .mobileIcon{
   display: flex;
   justify-content: center;
-
+  color: #74b9b3;
 }
 
 .contactAlign{
