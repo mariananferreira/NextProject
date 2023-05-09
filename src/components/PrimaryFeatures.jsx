@@ -119,7 +119,7 @@ export function PrimaryFeatures() {
                   id="join-heading"
                 >
                   NUTRICIONISTA <br/>
-                  NUTRICOACH                
+                                  
                 </h2>
                 <p className="textAboutMe">
                   Olá!<br/>
