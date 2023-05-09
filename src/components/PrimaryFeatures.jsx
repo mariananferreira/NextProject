@@ -127,7 +127,7 @@ export function PrimaryFeatures() {
                   Pretendo ajudá-lo/a a concretizar os seus objetivos de forma eficaz.<br/>
                   Consistência e dedicação são as chaves do sucesso!<br/>Bem-vindo/a ao meu website!</p>
                 <button 
-                  className="mt-2 inline-flex w-full items-center buttonStyle justify-center rounded-md border border-transparent bg-indigo-100 px-3 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-offset-2 sm:w-auto"
+                  className="mt-2 inline-flex w-full items-center buttonStyle justify-center rounded-md border border-transparent bg-white px-3 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-offset-2 sm:w-auto"
                   onClick={toggleButton}
                 >
                   Saiba mais
