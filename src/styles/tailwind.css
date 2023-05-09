@@ -129,4 +129,11 @@
 }
 
 
+.mobileAdjust{
+  margin-right: 15px;
+}
 
+
+.mobileCollumn{
+  flex-direction: column;
+}
